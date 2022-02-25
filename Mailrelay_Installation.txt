@@ -4,7 +4,7 @@
 
 The installation of the MailRelay plugin product for Prestashop is very simple. It only takes a few steps to do it.
 
-After installing the extension a new option "Advanced Parameters -> Mailrelay" appears, this option will let you sync all your Prestashop users with your Mailrelay account.
+After installing the extension a new option "Modules -> Mailrelay" appears, this option will let you sync all your Prestashop users with your Mailrelay account.
 This will save you time when syncing and organizing your users in groups.
 
 Let's start with the installation process:
@@ -15,7 +15,6 @@ First required step
 
 The first step, in order for us to be able to use the extension, is to enable the API key of our Mailrelay account. For that we need to log in our Mailrelay account
 admin panel. Once we are there we will go to the "Settings" menu, then "API access". On that screen click on the "Generate new API key" button.
-It's not necessary for us to write down this key, once it's generated, the extension will be able to get it using your user and password data.
 
 ----------------------------------------
 Upload the necessary files to the server
@@ -41,19 +40,25 @@ This finishes the installation process.
 Configuring the extension
 -------------------------
 
-Once the extension is installed we will have a new settings option. We will go to Settings > Mailrelay option.
+Once the extension is installed we will have a new authentication page.
 Clicking on this option will take us to a form where we need to fill the following data:
 
-- Host (this can be found in your Mailrelay welcome email). Please note that the host must be entered without initial http://
+- Account (this is your Mailrelay account, if your Mailrelay account is demo.ipzmarketing.com, you should use onlye demo as account). Please note that the host must be entered without initial http://
 - API key (the API key generated for our Mailrelay account)
 
 Once this data is successfully saved we can start the user sync.
 
 ----------
-Sync users
+Settings
 ----------
 
-After the configuration we can select the groups of our Mailrelay account that must be sync with the Prestashop users. We will click them and will press the "Start Sync" button.
+After the configuration you can select if you want to auto sync your new users with Mailrelay, just enable the "Automatically sync new users with Mailrelay" options and choose the groups that you want to add your new users to. Click on the save button to save this option.
+
+----------
+Manual Sync
+----------
+
+In the Manual Sync area, you can select the groups of our Mailrelay account that must be sync with the Prestashop users. We will click them and will press the "Synchronize" button.
 
 We will see the following screen, that simply shows us the sync process. It shows the total users synced.
 
@@ -70,7 +75,7 @@ To delete the files use option "Delete".
 ----------------
 Additional notes
 ----------------
-- This extension has been tested using Prestashop 1.5.4.0
+- This extension has been tested using Prestashop 1.7.4.0
 
 - This software is provided by the copyright holders and contributors "AS IS" and any express or implied warranties, including, but not limited to,
 the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright owner or contributors be liable for any direct,
